@@ -1,0 +1,120 @@
+
+.loading {
+  display: flex;
+  height: 100px;
+  flex: 1 1;
+  background: white;
+}
+
+.loading .spinner {
+  width: 50px;
+  height: 3rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.loading .spinner>div {
+  display: inline-block;
+  width: 6px;
+  height: 100%;
+  -webkit-animation: 1s ease-in-out infinite sk-stretchdelay;
+  animation: 1s ease-in-out infinite sk-stretchdelay;
+  background-color: #999;
+}
+
+.loading .spinner .rect2 {
+    -webkit-animation-delay: -.9s;
+    animation-delay: -.9s
+}
+
+.loading .spinner .rect3 {
+    -webkit-animation-delay: -.8s;
+    animation-delay: -.8s
+}
+
+.loading .spinner .rect4 {
+    -webkit-animation-delay: -.7s;
+    animation-delay: -.7s
+}
+
+.loading .spinner .rect5 {
+    -webkit-animation-delay: -.6s;
+    animation-delay: -.6s
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%,100%,40% {
+      opacity: .5;
+      -webkit-transform: scaleY(.8);
+      transform: scaleY(.8)
+  }
+
+  20% {
+      opacity: 1;
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1)
+  }
+}
+
+@keyframes sk-stretchdelay {
+  0%,100%,40% {
+      opacity: .5;
+      -webkit-transform: scaleY(.8);
+      transform: scaleY(.8)
+  }
+
+  20% {
+      opacity: 1;
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1)
+  }
+}
+
+.screen-loading {
+  display: flex;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  top:0px;
+  left:0px;
+  flex: 1 1;
+  background: rgba(0,0,0,0.2);
+}
+
+.screen-loading .spinner {
+  width: 50px;
+  height: 3rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.screen-loading .spinner>div {
+  display: inline-block;
+  width: 6px;
+  height: 100%;
+  -webkit-animation: 1s ease-in-out infinite sk-stretchdelay;
+  animation: 1s ease-in-out infinite sk-stretchdelay;
+  background-color: #999;
+}
+
+.screen-loading .spinner .rect2 {
+    -webkit-animation-delay: -.9s;
+    animation-delay: -.9s
+}
+
+.screen-loading .spinner .rect3 {
+    -webkit-animation-delay: -.8s;
+    animation-delay: -.8s
+}
+
+.screen-loading .spinner .rect4 {
+    -webkit-animation-delay: -.7s;
+    animation-delay: -.7s
+}
+
+.screen-loading .spinner .rect5 {
+    -webkit-animation-delay: -.6s;
+    animation-delay: -.6s
+}
