@@ -5,3 +5,5 @@ build/*/node_modules
 build/*
 
 config.js
+
+v2Config.js
