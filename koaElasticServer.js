@@ -2,6 +2,7 @@
 const Koa = require('koa')
 const Router = require('koa-router')
 const static = require('koa-static')
+const child = require('child_process')
 const bodyParser = require('koa-bodyparser')
 const request = require('request-promise-native')
 const urlBase = 'http://localhost:9200/'
@@ -40,7 +41,7 @@ router.get('/', async (ctx,next) =>{
   ctx.body = await renderView('home')
 })
 function logger(data){
-  console.log(body)
+  console.log(data)
   child.execSync(`echo "${JSON.stringify(data)}" >> koaElasticServer.log`)
 }
 router.post('/query', async (ctx,next) =>{
